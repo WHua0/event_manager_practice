@@ -30,15 +30,15 @@ Github Test Codes Placeholder
 Documentation
 
 ### Closed Issue 3: Password Validation is Missing No Spaces Allowed and Max Length
-Github Issue Image Placeholder
+![Github Issue 3](submissions/CodeMod3Issue.png)
+
+![Code Modifications 3](submissions/CodeMod3.png)
+
+![Code Modification Result 3](submissions/CodeMod3Test.png)
 
 [Github Issue 3 Link](https://github.com/WHua0/event_manager_practice/issues/4)
 
-Github Code Modifications Placeholder
-
-Github Test Codes Placeholder
-
-Documentation
+POST/register Register and POST/users Create User allowed passwords with spaces, and of unlimited lengths. Password validator in class UserCreate in user_schemas.py is updated to return ValueError if length of password is over 128 characters, or if a space is found within the password.
 
 ### Closed Issue 4: Email Validation is Missing Max Length
 
