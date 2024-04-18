@@ -1,7 +1,7 @@
 # Event Manager Practice
 
 ## Closed Issues
-Github Issue Image Placeholder
+![Github Issues List](submissions/CodeIssues.png)
 
 [Github Closed Issues Link](https://github.com/WHua0/event_manager_practice/issues?q=is%3Aissue+is%3Aclosed)
 
