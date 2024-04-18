@@ -109,17 +109,17 @@ POST/users Create User HTTP 400 detail message stated "Username already exists" 
 
 GET/users Get User By ID returned incorrect null values for Full Name, Bio, and Profile Picture Url for existing user. Router Get User By ID in user_routes.py is updated to return the three missing values from the User database.
 
-### Closed Issue 10: POST/users Get Users is Missing HTTP 400 for Skip Integer Less Than 0, and Limit Integer Less Than or Equal to 0
+### Closed Issue 10: POST/users Get Users is Missing HTTP 400 for Skip Integer Less Than 0, and Limit Integer Not More Than 0
 
-Github Issue Image Placeholder
+![Github Issue 10](submissions/CodeMod10Issue.png)
+
+![Code Modifications 10](submissions/CodeMod10.png)
+
+![Code Modification Result 10](submissions/CodeMod10Test.png)
 
 [Github Issue 10 Link](https://github.com/WHua0/event_manager_practice/issues/5)
 
-Github Code Modifications Placeholder
-
-Github Test Codes Placeholder
-
-Documentation
+GET/users List User returned HTTP 200 for Skip Integer less than 0, and Limit Integer not more than 0. Router List Users in user_routes.py is updated to return HTTP 400 instead of HTTP 200 for invalid input. This is to provide an accurate error message.
 
 ### Closed Issue 11: PUT/users Update User is Not Functional
 
