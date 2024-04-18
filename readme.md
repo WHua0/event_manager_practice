@@ -139,7 +139,7 @@ Dockerhub Image Placeholder
 Dockerhub Link 
 
 ## Pytest Coverage
-Pytest Coverage Image Placeholder
+![Pytest Coverage](submissions/PytestCov.png)
 
 ## Reflection
 Documentation
