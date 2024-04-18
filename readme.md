@@ -22,7 +22,7 @@ Github Code Modifications Placeholder
 
 Github Test Codes Placeholder
 
-Github Issue 2 Link
+[Github Issue 2 Link](https://github.com/WHua0/event_manager_practice/issues/27)
 
 Documentation
 
