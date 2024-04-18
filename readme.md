@@ -83,7 +83,7 @@ In POST/register Register request body, the test user is John Doe, however the t
 
 POST/register Register HTTP 400 detail message stated "Username already exists" even when duplicate email returned HTTP 400. HTTPException detail in Router Post Register in user_routes.py is corrected to "Username or Email already in use". This is to provide an accurate error message.
 
-### Closed Issue 8: POST/users Create User is Missing HTTP 400 and Detail Message for Email Already In Use
+### Closed Issue 8: POST/users Create User is Missing HTTP 400 and Detail Message for Email Already In Use, and Update Detail Message for Duplicate User
 
 ![Github Issue 8](submissions/CodeMod8Issue.png)
 
