@@ -39,15 +39,15 @@ POST/register Register and POST/users Create User allowed passwords with spaces,
 
 ### Closed Issue 4: Email Validation is Missing Max Length
 
-Github Issue Image Placeholder
+![Github Issue 4](submissions/CodeMod4Issue.png)
+
+![Code Modifications 4](submissions/CodeMod4.png)
+
+![Code Modification Result 4](submissions/CodeMod4Test.png)
 
 [Github Issue 4 Link](https://github.com/WHua0/event_manager_practice/issues/8)
 
-Github Code Modifications Placeholder
-
-Github Test Codes Placeholder
-
-Documentation
+POST/register Register and POST/users Create User allowed emails of unlimited lengths. Email in class UserBase in user_schemas.py is updated to have a maxlength of 255. This is to increase security.
 
 ### Closed Issue 5: Profile Picture Url Validation is missing Max Length, HTTPS/HTTP protocol, and Valid Domain 
 
