@@ -18,11 +18,11 @@ Description for max_login_attempts in class Settings in config.py incorrectly st
 ### Closed Issue 2: Username Validation (TBD)
 Github Issue Image Placeholder
 
-Github Issue 2 Link
-
 Github Code Modifications Placeholder
 
 Github Test Codes Placeholder
+
+Github Issue 2 Link
 
 Documentation
 
