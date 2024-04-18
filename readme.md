@@ -7,9 +7,9 @@ Github Issue Image Placeholder
 
 ### Closed Issue 1: Settings Max Login Attempts Description is Incorrect
 
-![Github Issue 3](submissions/CodeMod1Issue.png)
+![Github Issue 1](submissions/CodeMod1Issue.png)
 
-![Code Modifications 3](submissions/CodeMod1.png)
+![Code Modifications 1](submissions/CodeMod1.png)
 
 [Github Issue 1 Link](https://github.com/WHua0/event_manager_practice/issues/10)
 
