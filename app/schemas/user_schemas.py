@@ -36,6 +36,7 @@ Data Serialization and Deserialization: Pydantic handles the secure conversion o
 Overall, the use of Pydantic models in this file contributes to building a secure, validated, and well-documented API for user-related operations in a FastAPI application. The combination of type annotations, regex-based validators, and inheritance promotes code reusability, maintainability, and adherence to security best practices.
 """
 # Import required libraries and modules
+from typing import ClassVar
 from datetime import datetime, timezone  # Provides classes for manipulating dates and times in both simple and complex ways.
 from urllib.parse import urlparse  # Functions for breaking down and reconstructing URLs.
 from pydantic import BaseModel, EmailStr, Field, HttpUrl, validator  # Pydantic is used for data validation and settings management using Python type annotations.
@@ -80,10 +81,15 @@ class UserBase(BaseModel):
     )
 
     # Validators are used to validate the data
+    RESERVED_WORDS: ClassVar[list] = ['admin', 'root', 'superuser', 'moderator']
+
     @validator('username')
     def validate_username(cls, v):
         if not re.match(r"^[a-zA-Z0-9_-]+$", v):
             raise ValueError("Username can only contain letters, numbers, underscores, and hyphens.")
+        for reserved_word in cls.RESERVED_WORDS:
+            if reserved_word in v.lower():
+                raise ValueError(f"Username cannot contain the reserved word: '{reserved_word}'.")
         return v
 
     @validator('full_name')
