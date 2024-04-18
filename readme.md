@@ -160,4 +160,19 @@ PUT/users Update User By ID is working as intended with updates to the database.
 ![Pytest Coverage](submissions/PytestCov.png)
 
 ## Reflection
-Documentation
+
+Before taking this course, I was a heavy computer user/gamer. However, I had a BS in Biology without any knowledge in the field of computer sciences. I also had a job not related to my field. Knowing that technology is the future, I sought to change by career, and thus applied to NJIT Graduate Program for Business and Information Systems. 
+
+Four months before class, I self-studied from scratch, starting with HTML and CSS.
+
+Two months before class, I self-studied Python.
+
+As such, my foundation was very weak as I struggled to keep up with the course material. Nevertheless, I acquired much knowledge, skills, and experience from this course, which I appreciated. I only wished that I had a better starting foundation and a good memory to take in the available information.
+
+Due to my previous employeers' need of meeting Time of the Essence deadlines, I had developed a tendency to rush, rush, rush! However, this assignment showed me the importance of taking one careful step at a time, and the importance of backtracking to correct latent issues. There were many times that I overlooked simply fixes, and the code complexity spiraled out of control. Sometimes, it is necessary to take a step back, and start from the beginning once more with a fresh mind. As the professor has put it, "swim out back a bit further and back everytime" and "follow the bouncing ball" are indeed correct approaches. 
+
+Nevertheless, the difficulty and amount of course material have exploded in the last few weeks of class. I am a tactile learner, so I had difficulty processing and understanding the vast amounts of written information. As a result, after reading, I still do not understand much, so I resort to watching tutorials on YouTube. The tutorials and on-hand-experience have given me much insight.
+
+The part of the assignment that gave me the most trouble was the PUT/users Update User By ID. It took me a while before I remembered to check the fast api logs for clues. After checking, it was clear that the issue that the database query had issues with the Url, and the fix was simple.
+
+However, for the assignment, I enjoyed speculating the potential problems that needed to be resolve by using validator the most.
