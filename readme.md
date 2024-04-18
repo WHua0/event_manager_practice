@@ -131,7 +131,23 @@ GET/users List User returned HTTP 200 for Skip Integer less than 0, and Limit In
 
 [Github Issue 11 Link](https://github.com/WHua0/event_manager_practice/issues/6)
 
-Documentation
+PUT/users Update User By ID returned HTTP 200 without updates to the User Database. As such, numerous steps were made to separate out the code to detect and fix errors:
+
+In user_routes.py, Router Update User By ID
+
+1. Added a Fetched User Information and Check if User Exists; if user is None, return HTTP 404 "User Not Found".
+2. Corrected if not updated_user to return HTTP 500 "Failed to update user", instead of HTTP 404.
+3. Added a Check if Updated Email is already in use by another User; if yes, return HTTP 400 "Email already in use".
+
+By checking logs, it was found that the database query does not accept Url's, as such:
+
+4. In user.services.py, classmethod update, added if profile_picture_url exist, convert url to a string before interacting with the database.
+
+In user_schemas.py, UserUpdate:
+
+5. Added a full name validator and updated json_schema_extra to reflect the change.
+
+6. Updated profile picture url validator from Closed Issue 5.
 
 ## Dockerhub
 ![Dockerhub Link](submissions/Dockerhub.png) 
