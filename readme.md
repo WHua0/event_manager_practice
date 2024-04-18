@@ -93,7 +93,7 @@ POST/register Register HTTP 400 detail message stated "Username already exists" 
 
 [Github Issue 8 Link](https://github.com/WHua0/event_manager_practice/issues/12)
 
-Documentation
+POST/users Create User returns HTTP 500 instead of HTTP 400 when using a duplicate email. Router Post Create User is updated to return HTTP 400 "Email already in use" when using a duplicate email after checking for a duplicate username. This is to provide an accurate error message.
 
 ### Closed Issue 9: POST/users Get User is Missing Return Values for Full Name, Bio, and Profile Picture Url
 
