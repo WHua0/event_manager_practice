@@ -147,7 +147,11 @@ In user_schemas.py, UserUpdate:
 
 5. Added a full name validator and updated json_schema_extra to reflect the change.
 
-6. Updated profile picture url validator from Closed Issue 5.
+6. Previously updated profile picture url validator from Closed Issue 5.
+
+7. Updated BaseModel to mirror UserBase(BaseModel) Previous Updates from Closed Issues 4 & 5: Max Length for Email and Profile Picture Url.
+
+PUT/users Update User By ID is working as intended with updates to the database.
 
 ## Dockerhub
 ![Dockerhub Link](submissions/Dockerhub.png) 
