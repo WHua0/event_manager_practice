@@ -169,6 +169,7 @@ class UserCreate(UserBase):
 class UserUpdate(BaseModel):
     email: Optional[EmailStr] = Field(
         None,
+        max_length=255,
         description="A new email address for the user.",
         example="john.doe.new@example.com"
     )
@@ -186,6 +187,7 @@ class UserUpdate(BaseModel):
     )
     profile_picture_url: Optional[HttpUrl] = Field(
         None,
+        max_length=2083,
         description="An updated URL to the user's profile picture.",
         example="https://example.com/profile_pictures/john_doe_updated.jpg"
     )
