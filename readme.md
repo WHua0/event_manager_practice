@@ -123,13 +123,13 @@ GET/users List User returned HTTP 200 for Skip Integer less than 0, and Limit In
 
 ### Closed Issue 11: PUT/users Update User is Not Functional
 
-Github Issue Image Placeholder
+![Github Issue 11](submissions/CodeMod11Issue.png)
+
+![Code Modifications 11](submissions/CodeMod11.png)
+
+![Code Modification Result 11](submissions/CodeMod11Test.png)
 
 [Github Issue 11 Link](https://github.com/WHua0/event_manager_practice/issues/6)
-
-Github Code Modifications Placeholder
-
-Github Test Codes Placeholder
 
 Documentation
 
