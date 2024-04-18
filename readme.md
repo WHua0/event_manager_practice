@@ -84,7 +84,7 @@ In POST/register Register request body, the test user is John Doe, however the t
 
 [Github Issue 7 Link](https://github.com/WHua0/event_manager_practice/issues/3)
 
-Documentation
+HTTP 400 detail message stated "Username already exists" even when duplicate email returned HTTP 400. HTTPException detail in Router Post Register in user_routes.py is corrected to "Username or Email already in use".
 
 ### Closed Issue 8: POST/users Create User is Missing HTTP 400 and Detail Message for Email Already In Use
 
