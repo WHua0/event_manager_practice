@@ -85,13 +85,13 @@ HTTP 400 detail message stated "Username already exists" even when duplicate ema
 
 ### Closed Issue 8: POST/users Create User is Missing HTTP 400 and Detail Message for Email Already In Use
 
-Github Issue Image Placeholder
+![Github Issue 8](submissions/CodeMod8Issue.png)
+
+![Code Modifications 8](submissions/CodeMod8.png)
+
+![Code Modification Result 8](submissions/CodeMod8Test.png)
 
 [Github Issue 8 Link](https://github.com/WHua0/event_manager_practice/issues/12)
-
-Github Code Modifications Placeholder
-
-Github Test Codes Placeholder
 
 Documentation
 
