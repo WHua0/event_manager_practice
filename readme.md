@@ -15,7 +15,7 @@ Github Issue Image Placeholder
 
 Description for max_login_attempts in class Settings in config.py incorrectly stated "Background color of QR codes". The description is updated to "Max number of login attempts".
 
-### Closed Issue 2: Username Validation (TBD)
+### Closed Issue 2: Username Validation for Reserved Words
 ![Github Issue 2](submissions/CodeMod2Issue.png)
 
 ![Code Modifications 2](submissions/CodeMod2.png)
@@ -24,7 +24,7 @@ Description for max_login_attempts in class Settings in config.py incorrectly st
 
 [Github Issue 2 Link](https://github.com/WHua0/event_manager_practice/issues/27)
 
-Documentation
+POST/register Register and POST/users Create User allowed usernames to have any word, including explicit words. Username validator in class UserBase in user_schemas.py is updated to return ValueError if username contains reserved words. This is to increase security, and reduce profanity.
 
 ### Closed Issue 3: Password Validation is Missing No Spaces Allowed and Max Length
 ![Github Issue 3](submissions/CodeMod3Issue.png)
