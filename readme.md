@@ -73,7 +73,7 @@ Documentation
 
 [Github Issue 6 Link](https://github.com/WHua0/event_manager_practice/issues/1)
 
-In POST/register Register request body, the test user is John Doe, however the test profile picture url is for Jane Smith. For consistency, the class Config in class UserBase in user_schemas.py is corrected to reflect the test profile picture url of John Doe.
+In POST/register Register request body, the test user is John Doe, however the test profile picture url was for Jane Smith. For consistency, the class Config in class UserBase in user_schemas.py is corrected to reflect the test profile picture url of John Doe.
 
 ### Closed Issue 7: POST/register HTTP 400 Detail Message is Missing Email Already In Use
 ![Github Issue 7](submissions/CodeMod7Issue.png)
