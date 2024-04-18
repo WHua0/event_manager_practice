@@ -62,7 +62,7 @@ Documentation
 
 [Github Issue 5 Link](https://github.com/WHua0/event_manager_practice/issues/7)
 
-POST/register Register and POST/users Create User allowed Profile Picture Url of no restriction except with image file extension. Profile Picture Url validator in class UserBase and class UserUpdate are updated to return ValueError if url is missing http or https, missing domain name, or containing an invalid domain name. Max Length of 2083 is also added to UserBase BaseModel. This is to increase security.
+POST/register Register and POST/users Create User allowed Profile Picture Url of no restriction except with image file extension. Profile Picture Url validator in class UserBase and class UserUpdate in user_schemas.py are updated to return ValueError if url is missing http or https, missing domain name, or containing an invalid domain name. Max Length of 2083 is also added to UserBase BaseModel. This is to increase security.
 
 ### Closed Issue 6: POST/register JSON Schema Example is Inconsistent
 ![Github Issue 6](submissions/CodeMod6Issue.png)
