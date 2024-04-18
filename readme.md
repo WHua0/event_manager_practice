@@ -38,7 +38,7 @@ Documentation
 
 [Github Issue 3 Link](https://github.com/WHua0/event_manager_practice/issues/4)
 
-POST/register Register and POST/users Create User allowed passwords with spaces, and of unlimited lengths. Password validator in class UserCreate in user_schemas.py is updated to return ValueError if length of password is over 128 characters, or if a space is found within the password.
+POST/register Register and POST/users Create User allowed passwords with spaces, and of unlimited lengths. Password validator in class UserCreate in user_schemas.py is updated to return ValueError if length of password is over 128 characters, or if a space is found within the password. This is to increase security.
 
 ### Closed Issue 4: Email Validation is Missing Max Length
 
