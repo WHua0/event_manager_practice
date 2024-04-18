@@ -30,6 +30,24 @@ async def test_create_user(async_client):
     # Asserts
     assert response.status_code == 201
 
+    # Tests create user with duplicate username
+    user_data_duplicate_username = {
+        "username": "testuser",
+        "email": "testnew@example.com",
+        "password": "sS#fdasrongPassword123!",
+    }
+    response = await async_client.post("/users/", json=user_data_duplicate_username, headers=headers)
+    assert response.status_code == 400
+
+    # Tests create user with duplicate email
+    user_data_duplicate_email = {
+        "username": "testusernew",
+        "email": "test@example.com",
+        "password": "sS#fdasrongPassword123!",
+    }
+    response = await async_client.post("/users/", json=user_data_duplicate_email, headers=headers)
+    assert response.status_code == 400
+
 # You can similarly refactor other test functions to use the async_client fixture
 @pytest.mark.asyncio
 async def test_retrieve_user(async_client, user, token):
