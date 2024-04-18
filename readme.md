@@ -95,6 +95,8 @@ POST/register Register HTTP 400 detail message stated "Username already exists" 
 
 POST/users Create User returns HTTP 500 instead of HTTP 400 when using a duplicate email. Router Post Create User in user_routes.py is updated to return HTTP 400 "Email already in use" when using a duplicate email after checking for a duplicate username. This is to provide an accurate error message.
 
+POST/users Create User HTTP 400 detail message stated "Username already exists" when using a duplicate username. HTTPException detail in Router Post Create User in user_routes.py is updated to "Username already in use". This is for consistency with POST/register Register in Closed Issue 7.
+
 ### Closed Issue 9: POST/users Get User is Missing Return Values for Full Name, Bio, and Profile Picture Url
 
 Github Issue Image Placeholder
