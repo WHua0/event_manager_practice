@@ -7,16 +7,13 @@ Github Issue Image Placeholder
 
 ### Closed Issue 1: Settings Max Login Attempts Description is Incorrect
 
-Github Issue Image Placeholder
+![Github Issue 3](submissions/CodeMod1Issue.png)
+
+![Code Modifications 3](submissions/CodeMod1.png)
 
 [Github Issue 1 Link](https://github.com/WHua0/event_manager_practice/issues/10)
 
-Github Code Modifications Placeholder
-
-Github Test Codes Placeholder
-
-Documentation
-
+Description for max_login_attempts in class Settings in config.py incorrectly stated "Background color of QR codes". The description is updated to "Max number of login attempts".
 
 ### Closed Issue 2: Username Validation (TBD)
 Github Issue Image Placeholder
